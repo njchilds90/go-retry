@@ -1,0 +1,40 @@
+linters:
+  disable:
+    - llll
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - unused
+    - gofmt
+    - goimports
+    - maligned
+    - dupl
+    - durationcheck
+    - exportloopref
+    - revive
+    - varcheck
+    - structcheck
+    - typecheck
+    - unconvert
+    - interfacer
+    - nilerr
+    - gochecknoinits
+    - gochecknoglobals
+    - deadcode
+    - funlen
+    - gocyclo
+    - lll
+    - misspell
+    - nakedret
+    - prealloc
+    - scopelint
+
+issues:
+  exclude-rules:
+    - '.*/vendor/.*'
+    - '.*/_test.go:.*'
+  exclude-patterns:
+    - '^.*\.pb\.go:.*'
